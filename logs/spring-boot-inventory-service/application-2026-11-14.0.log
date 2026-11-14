@@ -1,0 +1,366 @@
+14-11-2026 18:31:43.022 [main] [-] INFO  spring-boot-inventory-service-c.c.e.s.SpringBootInventoryServiceApplication.logStarting - Starting SpringBootInventoryServiceApplication using Java 21.0.6 with PID 17385 (/Users/mac/ecommerce/spring-boot-inventory-service/target/classes started by mac in /Users/mac/ecommerce)
+14-11-2026 18:31:43.025 [main] [-] INFO  spring-boot-inventory-service-c.c.e.s.SpringBootInventoryServiceApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+14-11-2026 18:31:43.065 [main] [-] INFO  spring-boot-inventory-service-o.s.c.c.c.ConfigServerConfigDataLoader.log - Fetching config from server at : http://localhost:8888
+14-11-2026 18:31:43.065 [main] [-] INFO  spring-boot-inventory-service-o.s.c.c.c.ConfigServerConfigDataLoader.log - Located environment: name=spring-boot-inventory-service, profiles=[default], label=null, version=b900f9c28cb310bf2378f625d2b70d16b10e3e37, state=
+14-11-2026 18:31:43.952 [main] [-] INFO  spring-boot-inventory-service-o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14-11-2026 18:31:44.104 [main] [-] INFO  spring-boot-inventory-service-o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 138 ms. Found 1 JPA repository interface.
+14-11-2026 18:31:44.488 [main] [-] INFO  spring-boot-inventory-service-o.s.cloud.context.scope.GenericScope.setSerializationId - BeanFactory id=2985faeb-2b53-3ccf-b8cc-8e8d55e3f67b
+14-11-2026 18:31:44.825 [main] [-] INFO  spring-boot-inventory-service-o.s.boot.tomcat.TomcatWebServer.initialize - Tomcat initialized with port 9010 (http)
+14-11-2026 18:31:44.836 [main] [-] INFO  spring-boot-inventory-service-o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-9010"]
+14-11-2026 18:31:44.837 [main] [-] INFO  spring-boot-inventory-service-o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+14-11-2026 18:31:44.837 [main] [-] INFO  spring-boot-inventory-service-o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/11.0.27]
+14-11-2026 18:31:44.883 [main] [-] INFO  spring-boot-inventory-service-o.s.b.w.c.s.WebApplicationContextInitializer.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1816 ms
+14-11-2026 18:31:45.355 [main] [-] INFO  spring-boot-inventory-service-org.hibernate.orm.jpa.logPersistenceUnitInformation - HHH008540: Processing PersistenceUnitInfo [name: default]
+14-11-2026 18:31:45.406 [main] [-] INFO  spring-boot-inventory-service-org.hibernate.orm.core.logVersion - HHH000001: Hibernate ORM core version 7.4.13.Final
+14-11-2026 18:31:45.739 [main] [-] INFO  spring-boot-inventory-service-o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+14-11-2026 18:31:45.768 [main] [-] INFO  spring-boot-inventory-service-com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+14-11-2026 18:31:45.868 [main] [-] INFO  spring-boot-inventory-service-com.zaxxer.hikari.pool.HikariPool.checkFailFast - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@13da6bc9
+14-11-2026 18:31:45.869 [main] [-] INFO  spring-boot-inventory-service-com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+14-11-2026 18:31:45.935 [main] [-] INFO  spring-boot-inventory-service-o.hibernate.orm.connections.pooling.logConnectionInfo - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/inventoryDB]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.15
+	Default catalog/schema: inventoryDB/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+14-11-2026 18:31:46.697 [main] [-] INFO  spring-boot-inventory-service-org.hibernate.orm.core.initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14-11-2026 18:31:46.756 [main] [-] INFO  spring-boot-inventory-service-o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14-11-2026 18:31:46.829 [main] [-] INFO  spring-boot-inventory-service-o.s.d.j.r.q.QueryEnhancerFactories.<clinit> - Hibernate is in classpath; If applicable, HQL parser will be used.
+14-11-2026 18:31:47.140 [main] [-] WARN  spring-boot-inventory-service-o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14-11-2026 18:31:47.226 [main] [-] INFO  spring-boot-inventory-service-o.s.c.o.FeignClientFactoryBean.getTarget - For 'spring-boot-order-service' URL not provided. Will try picking an instance via load-balancing.
+14-11-2026 18:31:47.785 [main] [-] INFO  spring-boot-inventory-service-o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration.restClientDiscoveryClientOptionalArgs - Eureka HTTP Client uses RestClient.
+14-11-2026 18:31:47.809 [main] [-] WARN  spring-boot-inventory-service-o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger.afterPropertiesSet - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+14-11-2026 18:31:47.824 [main] [-] INFO  spring-boot-inventory-service-o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 16 endpoints beneath base path '/actuator'
+14-11-2026 18:31:47.894 [main] [-] INFO  spring-boot-inventory-service-o.s.c.n.eureka.InstanceInfoFactory.create - Setting initial instance status as: STARTING
+14-11-2026 18:31:47.914 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.<init> - Initializing Eureka in region us-east-1
+14-11-2026 18:31:47.917 [main] [-] INFO  spring-boot-inventory-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+14-11-2026 18:31:47.923 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Disable delta property : false
+14-11-2026 18:31:47.924 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Single vip registry refresh property : null
+14-11-2026 18:31:47.924 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Force full registry fetch : false
+14-11-2026 18:31:47.924 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Application is null : false
+14-11-2026 18:31:47.924 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Registered Applications size is zero : true
+14-11-2026 18:31:47.924 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Application version is -1: true
+14-11-2026 18:31:47.924 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - Getting all instance registry info from the eureka server
+14-11-2026 18:31:48.083 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - The response status is 200
+14-11-2026 18:31:48.085 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.initScheduledTasks - Starting heartbeat executor: renew interval is: 30
+14-11-2026 18:31:48.087 [main] [-] INFO  spring-boot-inventory-service-c.n.discovery.InstanceInfoReplicator.<init> - InstanceInfoReplicator onDemand update allowed rate per min is 4
+14-11-2026 18:31:48.089 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.<init> - Discovery Client initialized at timestamp 1794677508088 with initial instances count: 4
+14-11-2026 18:31:48.092 [main] [-] INFO  spring-boot-inventory-service-o.s.c.n.e.s.EurekaServiceRegistry.register - Registering application SPRING-BOOT-INVENTORY-SERVICE with eureka with status UP
+14-11-2026 18:31:48.092 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1794677508092, current=UP, previous=STARTING]
+14-11-2026 18:31:48.094 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-BOOT-INVENTORY-SERVICE/192.168.138.98:spring-boot-inventory-service:9010: registering service...
+14-11-2026 18:31:48.094 [main] [-] INFO  spring-boot-inventory-service-o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-9010"]
+14-11-2026 18:31:48.106 [main] [-] INFO  spring-boot-inventory-service-o.s.boot.tomcat.TomcatWebServer.start - Tomcat started on port 9010 (http) with context path '/inventory'
+14-11-2026 18:31:48.107 [main] [-] INFO  spring-boot-inventory-service-o.s.c.n.e.s.EurekaAutoServiceRegistration.onApplicationEvent - Updating port to 9010
+14-11-2026 18:31:48.121 [main] [-] INFO  spring-boot-inventory-service-c.c.e.s.SpringBootInventoryServiceApplication.logStarted - Started SpringBootInventoryServiceApplication in 8.11 seconds (process running for 9.156)
+14-11-2026 18:31:48.127 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-BOOT-INVENTORY-SERVICE/192.168.138.98:spring-boot-inventory-service:9010 - registration status: 204
+14-11-2026 18:36:47.930 [AsyncResolver-bootstrap-executor-%d] [-] INFO  spring-boot-inventory-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+14-11-2026 18:41:48.007 [AsyncResolver-bootstrap-executor-%d] [-] INFO  spring-boot-inventory-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+14-11-2026 18:46:48.019 [AsyncResolver-bootstrap-executor-%d] [-] INFO  spring-boot-inventory-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+14-11-2026 18:51:48.041 [AsyncResolver-bootstrap-executor-%d] [-] INFO  spring-boot-inventory-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+14-11-2026 18:56:48.061 [AsyncResolver-bootstrap-executor-%d] [-] INFO  spring-boot-inventory-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+14-11-2026 19:01:48.069 [AsyncResolver-bootstrap-executor-%d] [-] INFO  spring-boot-inventory-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+14-11-2026 19:09:26.578 [HikariPool-1:housekeeper] [-] WARN  spring-boot-inventory-service-com.zaxxer.hikari.pool.HikariPool.run - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m40s265ms).
+14-11-2026 19:09:29.483 [DiscoveryClient-HeartbeatExecutor-%d] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.renew - DiscoveryClient_SPRING-BOOT-INVENTORY-SERVICE/192.168.138.98:spring-boot-inventory-service:9010 - Re-registering apps/SPRING-BOOT-INVENTORY-SERVICE
+14-11-2026 19:09:29.484 [DiscoveryClient-HeartbeatExecutor-%d] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-BOOT-INVENTORY-SERVICE/192.168.138.98:spring-boot-inventory-service:9010: registering service...
+14-11-2026 19:09:29.697 [DiscoveryClient-HeartbeatExecutor-%d] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-BOOT-INVENTORY-SERVICE/192.168.138.98:spring-boot-inventory-service:9010 - registration status: 204
+14-11-2026 19:09:58.360 [AsyncResolver-bootstrap-executor-%d] [-] INFO  spring-boot-inventory-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+14-11-2026 19:14:58.375 [AsyncResolver-bootstrap-executor-%d] [-] INFO  spring-boot-inventory-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+14-11-2026 19:19:58.390 [AsyncResolver-bootstrap-executor-%d] [-] INFO  spring-boot-inventory-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+14-11-2026 19:24:58.409 [AsyncResolver-bootstrap-executor-%d] [-] INFO  spring-boot-inventory-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+14-11-2026 19:26:25.043 [SpringApplicationShutdownHook] [-] INFO  spring-boot-inventory-service-o.s.c.n.e.s.EurekaServiceRegistry.deregister - Unregistering application SPRING-BOOT-INVENTORY-SERVICE with eureka with status DOWN
+14-11-2026 19:26:25.051 [SpringApplicationShutdownHook] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1794680785050, current=DOWN, previous=UP]
+14-11-2026 19:26:25.057 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-BOOT-INVENTORY-SERVICE/192.168.138.98:spring-boot-inventory-service:9010: registering service...
+14-11-2026 19:26:25.118 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-BOOT-INVENTORY-SERVICE/192.168.138.98:spring-boot-inventory-service:9010 - registration status: 204
+14-11-2026 19:26:25.258 [SpringApplicationShutdownHook] [-] INFO  spring-boot-inventory-service-o.s.boot.tomcat.GracefulShutdown.shutDownGracefully - Commencing graceful shutdown. Waiting for active requests to complete
+14-11-2026 19:26:25.295 [tomcat-shutdown] [-] INFO  spring-boot-inventory-service-o.s.boot.tomcat.GracefulShutdown.doShutdown - Graceful shutdown complete
+14-11-2026 19:26:25.361 [SpringApplicationShutdownHook] [-] INFO  spring-boot-inventory-service-o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+14-11-2026 19:26:25.394 [SpringApplicationShutdownHook] [-] INFO  spring-boot-inventory-service-com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+14-11-2026 19:26:25.408 [SpringApplicationShutdownHook] [-] INFO  spring-boot-inventory-service-com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+14-11-2026 19:26:26.423 [SpringApplicationShutdownHook] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.shutdown - Shutting down DiscoveryClient ...
+14-11-2026 19:26:29.426 [SpringApplicationShutdownHook] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.unregister - Unregistering ...
+14-11-2026 19:26:29.445 [SpringApplicationShutdownHook] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.unregister - DiscoveryClient_SPRING-BOOT-INVENTORY-SERVICE/192.168.138.98:spring-boot-inventory-service:9010 - deregister  status: 200
+14-11-2026 19:26:29.450 [SpringApplicationShutdownHook] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.shutdown - Completed shut down of DiscoveryClient
+14-11-2026 19:26:44.086 [main] [-] INFO  spring-boot-inventory-service-c.c.e.s.SpringBootInventoryServiceApplication.logStarting - Starting SpringBootInventoryServiceApplication using Java 21.0.6 with PID 21943 (/Users/mac/ecommerce/spring-boot-inventory-service/target/classes started by mac in /Users/mac/ecommerce)
+14-11-2026 19:26:44.089 [main] [-] INFO  spring-boot-inventory-service-c.c.e.s.SpringBootInventoryServiceApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+14-11-2026 19:26:44.130 [main] [-] INFO  spring-boot-inventory-service-o.s.c.c.c.ConfigServerConfigDataLoader.log - Fetching config from server at : http://localhost:8888
+14-11-2026 19:26:44.130 [main] [-] INFO  spring-boot-inventory-service-o.s.c.c.c.ConfigServerConfigDataLoader.log - Located environment: name=spring-boot-inventory-service, profiles=[default], label=null, version=b900f9c28cb310bf2378f625d2b70d16b10e3e37, state=
+14-11-2026 19:26:44.970 [main] [-] INFO  spring-boot-inventory-service-o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14-11-2026 19:26:45.120 [main] [-] INFO  spring-boot-inventory-service-o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 138 ms. Found 1 JPA repository interface.
+14-11-2026 19:26:45.474 [main] [-] INFO  spring-boot-inventory-service-o.s.cloud.context.scope.GenericScope.setSerializationId - BeanFactory id=2985faeb-2b53-3ccf-b8cc-8e8d55e3f67b
+14-11-2026 19:26:45.865 [main] [-] INFO  spring-boot-inventory-service-o.s.boot.tomcat.TomcatWebServer.initialize - Tomcat initialized with port 9010 (http)
+14-11-2026 19:26:45.877 [main] [-] INFO  spring-boot-inventory-service-o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-9010"]
+14-11-2026 19:26:45.879 [main] [-] INFO  spring-boot-inventory-service-o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+14-11-2026 19:26:45.879 [main] [-] INFO  spring-boot-inventory-service-o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/11.0.27]
+14-11-2026 19:26:45.930 [main] [-] INFO  spring-boot-inventory-service-o.s.b.w.c.s.WebApplicationContextInitializer.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1797 ms
+14-11-2026 19:26:46.432 [main] [-] INFO  spring-boot-inventory-service-org.hibernate.orm.jpa.logPersistenceUnitInformation - HHH008540: Processing PersistenceUnitInfo [name: default]
+14-11-2026 19:26:46.483 [main] [-] INFO  spring-boot-inventory-service-org.hibernate.orm.core.logVersion - HHH000001: Hibernate ORM core version 7.4.13.Final
+14-11-2026 19:26:46.864 [main] [-] INFO  spring-boot-inventory-service-o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+14-11-2026 19:26:46.895 [main] [-] INFO  spring-boot-inventory-service-com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+14-11-2026 19:26:47.301 [main] [-] INFO  spring-boot-inventory-service-com.zaxxer.hikari.pool.HikariPool.checkFailFast - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4cbd17b3
+14-11-2026 19:26:47.302 [main] [-] INFO  spring-boot-inventory-service-com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+14-11-2026 19:26:47.383 [main] [-] INFO  spring-boot-inventory-service-o.hibernate.orm.connections.pooling.logConnectionInfo - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/inventoryDB]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.15
+	Default catalog/schema: inventoryDB/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+14-11-2026 19:26:48.160 [main] [-] INFO  spring-boot-inventory-service-org.hibernate.orm.core.initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14-11-2026 19:26:48.219 [main] [-] INFO  spring-boot-inventory-service-o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14-11-2026 19:26:48.303 [main] [-] INFO  spring-boot-inventory-service-o.s.d.j.r.q.QueryEnhancerFactories.<clinit> - Hibernate is in classpath; If applicable, HQL parser will be used.
+14-11-2026 19:26:48.766 [main] [-] WARN  spring-boot-inventory-service-o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14-11-2026 19:26:48.821 [main] [-] INFO  spring-boot-inventory-service-o.s.c.o.FeignClientFactoryBean.getTarget - For 'spring-boot-order-service' URL not provided. Will try picking an instance via load-balancing.
+14-11-2026 19:26:49.376 [main] [-] INFO  spring-boot-inventory-service-o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration.restClientDiscoveryClientOptionalArgs - Eureka HTTP Client uses RestClient.
+14-11-2026 19:26:49.399 [main] [-] WARN  spring-boot-inventory-service-o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger.afterPropertiesSet - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+14-11-2026 19:26:49.417 [main] [-] INFO  spring-boot-inventory-service-o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 16 endpoints beneath base path '/actuator'
+14-11-2026 19:26:49.479 [main] [-] INFO  spring-boot-inventory-service-o.s.c.n.eureka.InstanceInfoFactory.create - Setting initial instance status as: STARTING
+14-11-2026 19:26:49.500 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.<init> - Initializing Eureka in region us-east-1
+14-11-2026 19:26:49.503 [main] [-] INFO  spring-boot-inventory-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+14-11-2026 19:26:49.510 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Disable delta property : false
+14-11-2026 19:26:49.510 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Single vip registry refresh property : null
+14-11-2026 19:26:49.510 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Force full registry fetch : false
+14-11-2026 19:26:49.510 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Application is null : false
+14-11-2026 19:26:49.511 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Registered Applications size is zero : true
+14-11-2026 19:26:49.511 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.fetchRegistry - Application version is -1: true
+14-11-2026 19:26:49.511 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - Getting all instance registry info from the eureka server
+14-11-2026 19:26:49.661 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - The response status is 200
+14-11-2026 19:26:49.663 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.initScheduledTasks - Starting heartbeat executor: renew interval is: 30
+14-11-2026 19:26:49.664 [main] [-] INFO  spring-boot-inventory-service-c.n.discovery.InstanceInfoReplicator.<init> - InstanceInfoReplicator onDemand update allowed rate per min is 4
+14-11-2026 19:26:49.666 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.<init> - Discovery Client initialized at timestamp 1794680809665 with initial instances count: 2
+14-11-2026 19:26:49.669 [main] [-] INFO  spring-boot-inventory-service-o.s.c.n.e.s.EurekaServiceRegistry.register - Registering application SPRING-BOOT-INVENTORY-SERVICE with eureka with status UP
+14-11-2026 19:26:49.669 [main] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1794680809669, current=UP, previous=STARTING]
+14-11-2026 19:26:49.670 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-BOOT-INVENTORY-SERVICE/192.168.138.98:spring-boot-inventory-service:9010: registering service...
+14-11-2026 19:26:49.671 [main] [-] INFO  spring-boot-inventory-service-o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-9010"]
+14-11-2026 19:26:49.682 [main] [-] INFO  spring-boot-inventory-service-o.s.boot.tomcat.TomcatWebServer.start - Tomcat started on port 9010 (http) with context path '/inventory'
+14-11-2026 19:26:49.683 [main] [-] INFO  spring-boot-inventory-service-o.s.c.n.e.s.EurekaAutoServiceRegistration.onApplicationEvent - Updating port to 9010
+14-11-2026 19:26:49.696 [main] [-] INFO  spring-boot-inventory-service-c.c.e.s.SpringBootInventoryServiceApplication.logStarted - Started SpringBootInventoryServiceApplication in 16.706 seconds (process running for 17.421)
+14-11-2026 19:26:49.713 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-BOOT-INVENTORY-SERVICE/192.168.138.98:spring-boot-inventory-service:9010 - registration status: 204
+14-11-2026 19:31:49.521 [AsyncResolver-bootstrap-executor-%d] [-] INFO  spring-boot-inventory-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+14-11-2026 19:36:49.563 [AsyncResolver-bootstrap-executor-%d] [-] INFO  spring-boot-inventory-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+14-11-2026 19:41:49.587 [AsyncResolver-bootstrap-executor-%d] [-] INFO  spring-boot-inventory-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+14-11-2026 19:46:49.603 [AsyncResolver-bootstrap-executor-%d] [-] INFO  spring-boot-inventory-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+14-11-2026 19:51:49.617 [AsyncResolver-bootstrap-executor-%d] [-] INFO  spring-boot-inventory-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+14-11-2026 19:54:49.214 [http-nio-9010-exec-1] [-] INFO  spring-boot-inventory-service-o.a.c.c.C.[.[localhost].[/inventory].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14-11-2026 19:54:49.217 [http-nio-9010-exec-1] [-] INFO  spring-boot-inventory-service-o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+14-11-2026 19:54:49.247 [http-nio-9010-exec-1] [-] INFO  spring-boot-inventory-service-o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 29 ms
+14-11-2026 19:54:49.580 [http-nio-9010-exec-1] [6af8ae75b85f8ff263d2d4a9e5d05791-88783648c6597b29] INFO  spring-boot-inventory-service-c.c.e.s.service.ProductService.reduceStocks - Reducing the stocks
+14-11-2026 19:56:49.626 [AsyncResolver-bootstrap-executor-%d] [-] INFO  spring-boot-inventory-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+14-11-2026 20:01:49.653 [AsyncResolver-bootstrap-executor-%d] [-] INFO  spring-boot-inventory-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+14-11-2026 20:06:49.671 [AsyncResolver-bootstrap-executor-%d] [-] INFO  spring-boot-inventory-service-c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+14-11-2026 20:11:24.098 [SpringApplicationShutdownHook] [-] INFO  spring-boot-inventory-service-o.s.c.n.e.s.EurekaServiceRegistry.deregister - Unregistering application SPRING-BOOT-INVENTORY-SERVICE with eureka with status DOWN
+14-11-2026 20:11:24.135 [SpringApplicationShutdownHook] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1794683484135, current=DOWN, previous=UP]
+14-11-2026 20:11:24.166 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-BOOT-INVENTORY-SERVICE/192.168.138.98:spring-boot-inventory-service:9010: registering service...
+14-11-2026 20:11:24.554 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_SPRING-BOOT-INVENTORY-SERVICE/192.168.138.98:spring-boot-inventory-service:9010 - registration status: 204
+14-11-2026 20:11:25.012 [SpringApplicationShutdownHook] [-] INFO  spring-boot-inventory-service-o.s.boot.tomcat.GracefulShutdown.shutDownGracefully - Commencing graceful shutdown. Waiting for active requests to complete
+14-11-2026 20:11:25.107 [tomcat-shutdown] [-] INFO  spring-boot-inventory-service-o.s.boot.tomcat.GracefulShutdown.doShutdown - Graceful shutdown complete
+14-11-2026 20:11:25.348 [SpringApplicationShutdownHook] [-] INFO  spring-boot-inventory-service-o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+14-11-2026 20:11:25.487 [SpringApplicationShutdownHook] [-] INFO  spring-boot-inventory-service-com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+14-11-2026 20:11:25.512 [SpringApplicationShutdownHook] [-] INFO  spring-boot-inventory-service-com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+14-11-2026 20:11:25.857 [SpringApplicationShutdownHook] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.shutdown - Shutting down DiscoveryClient ...
+14-11-2026 20:11:28.895 [SpringApplicationShutdownHook] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.unregister - Unregistering ...
+14-11-2026 20:11:29.128 [SpringApplicationShutdownHook] [-] INFO  spring-boot-inventory-service-c.n.d.s.t.d.RedirectingEurekaHttpClient.execute - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/SPRING-BOOT-INVENTORY-SERVICE/192.168.138.98:spring-boot-inventory-service:9010": Connect to http://localhost:8761 failed: Connection refused
+org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/SPRING-BOOT-INVENTORY-SERVICE/192.168.138.98:spring-boot-inventory-service:9010": Connect to http://localhost:8761 failed: Connection refused
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:779)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:624)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:572)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:747)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:924)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toBodilessEntity(DefaultRestClient.java:888)
+	at org.springframework.cloud.netflix.eureka.http.RestClientEurekaHttpClient.cancel(RestClientEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:90)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:934)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:915)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:453)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:411)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:237)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:200)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:193)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:395)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:209)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:795)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:745)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1507)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:704)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1500)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1246)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1207)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1153)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:135)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:104)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:219)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:547)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:138)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeWithRequestAndBody(AbstractBufferingClientHttpRequest.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest$EndOfChainRequestExecution.execute(InterceptingClientHttpRequest.java:102)
+	at org.springframework.cloud.netflix.eureka.http.RestClientTransportClientFactory.lambda$newClient$2(RestClientTransportClientFactory.java:111)
+	at org.springframework.http.client.ClientHttpRequestInterceptor.lambda$apply$0(ClientHttpRequestInterceptor.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:73)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:50)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:614)
+	... 39 common frames omitted
+14-11-2026 20:11:29.229 [SpringApplicationShutdownHook] [-] WARN  spring-boot-inventory-service-c.n.d.s.t.d.RetryableEurekaHttpClient.execute - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/SPRING-BOOT-INVENTORY-SERVICE/192.168.138.98:spring-boot-inventory-service:9010": Connect to http://localhost:8761 failed: Connection refused
+14-11-2026 20:11:29.284 [SpringApplicationShutdownHook] [-] INFO  spring-boot-inventory-service-c.n.d.s.t.d.RedirectingEurekaHttpClient.execute - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/SPRING-BOOT-INVENTORY-SERVICE/192.168.138.98:spring-boot-inventory-service:9010": Connect to http://localhost:8761 failed: Connection refused
+org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/SPRING-BOOT-INVENTORY-SERVICE/192.168.138.98:spring-boot-inventory-service:9010": Connect to http://localhost:8761 failed: Connection refused
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:779)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:624)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:572)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:747)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:924)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toBodilessEntity(DefaultRestClient.java:888)
+	at org.springframework.cloud.netflix.eureka.http.RestClientEurekaHttpClient.cancel(RestClientEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:934)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:915)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:453)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:411)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:237)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:200)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:193)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:395)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:209)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:795)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:745)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1507)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:704)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1500)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1246)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1207)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1153)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:135)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:104)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:219)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:547)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:138)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeWithRequestAndBody(AbstractBufferingClientHttpRequest.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest$EndOfChainRequestExecution.execute(InterceptingClientHttpRequest.java:102)
+	at org.springframework.cloud.netflix.eureka.http.RestClientTransportClientFactory.lambda$newClient$2(RestClientTransportClientFactory.java:111)
+	at org.springframework.http.client.ClientHttpRequestInterceptor.lambda$apply$0(ClientHttpRequestInterceptor.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:73)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:50)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:614)
+	... 40 common frames omitted
+14-11-2026 20:11:29.290 [SpringApplicationShutdownHook] [-] WARN  spring-boot-inventory-service-c.n.d.s.t.d.RetryableEurekaHttpClient.execute - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/SPRING-BOOT-INVENTORY-SERVICE/192.168.138.98:spring-boot-inventory-service:9010": Connect to http://localhost:8761 failed: Connection refused
+14-11-2026 20:11:29.291 [SpringApplicationShutdownHook] [-] ERROR spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.unregister - DiscoveryClient_SPRING-BOOT-INVENTORY-SERVICE/192.168.138.98:spring-boot-inventory-service:9010 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:934)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:915)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:453)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:411)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:237)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:200)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:193)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:395)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:209)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:795)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:745)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1507)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:704)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1500)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1246)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1207)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1153)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:135)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:104)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+14-11-2026 20:11:29.297 [SpringApplicationShutdownHook] [-] INFO  spring-boot-inventory-service-c.netflix.discovery.DiscoveryClient.shutdown - Completed shut down of DiscoveryClient

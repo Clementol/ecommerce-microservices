@@ -1,0 +1,25 @@
+# Logs
+#logs/
+#*.log
+
+# Spring Boot builds
+**/target/
+**/build/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+application-local.yml
+application-local.properties
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+
+# Java
+*.class

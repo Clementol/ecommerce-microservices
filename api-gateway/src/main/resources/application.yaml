@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: api-gateway
+  reactor:
+    context-propagation: auto
+  config:
+    import: "configserver:http://localhost:8888"
