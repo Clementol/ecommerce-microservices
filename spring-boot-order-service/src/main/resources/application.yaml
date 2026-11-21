@@ -2,9 +2,9 @@ spring:
   application:
     name: spring-boot-order-service
   config:
-    import: "configserver:http://localhost:8888"
-  profiles:
-    active: dev
+    import: "configserver:http://config-server:8888"
+#  profiles:
+#    active: dev
 
 
 

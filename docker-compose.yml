@@ -1,0 +1,119 @@
+services:
+  zipkin:
+    image: openzipkin/zipkin:latest
+    container_name: zipkin
+    ports:
+      - "9411:9411"
+    networks:
+      - ecommerce-network
+
+  order-db:
+    image: postgres:16
+    container_name: order-db
+    environment:
+      - POSTGRES_DB=orderDB
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+    networks:
+      - ecommerce-network
+    volumes:
+      - order-db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user -d orderDB"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  inventory-db:
+    image: postgres:16
+    container_name: inventory-db
+    environment:
+      - POSTGRES_DB=inventoryDB
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+    networks:
+      - ecommerce-network
+    volumes:
+      - inventory-db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user -d inventoryDB"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  discovery-service:
+    image: 3a2e52cb65e4/discovery-service
+    container_name: discovery-service
+    ports:
+      - "8761:8761"
+    networks:
+      - ecommerce-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8761/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  config-server:
+    image: 3a2e52cb65e4/config-server
+    container_name: config-server
+    ports:
+      - "8888:8888"
+    networks:
+      - ecommerce-network
+    depends_on:
+      discovery-service:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8888/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+
+  inventory-service:
+    image: 3a2e52cb65e4/inventory-service
+    container_name: inventory-service
+    networks:
+      - ecommerce-network
+    depends_on:
+      config-server:
+        condition: service_healthy
+      zipkin:
+        condition: service_started
+      inventory-db:
+        condition: service_healthy
+
+  order-service:
+    image: 3a2e52cb65e4/order-service
+    container_name: order-service
+    networks:
+      - ecommerce-network
+    depends_on:
+      config-server:
+        condition: service_healthy
+      zipkin:
+        condition: service_started
+      order-db:
+        condition: service_healthy
+
+  api-gateway:
+    image: 3a2e52cb65e4/api-gateway
+    container_name: api-gateway
+    networks:
+      - ecommerce-network
+    depends_on:
+      config-server:
+        condition: service_healthy
+      order-service:
+        condition: service_started
+      inventory-service:
+        condition: service_started
+    ports:
+      - "8080:8080"
+
+volumes:
+  order-db-data:
+  inventory-db-data:
+
+networks:
+  ecommerce-network:
