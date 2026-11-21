@@ -8,6 +8,7 @@
             <pattern>%d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] [%X{traceId}-%X{spanId}] %-5level ${applicationName}-%logger{36}.%M - %msg%n</pattern>
         </encoder>
     </appender>
+
     <appender name="ROLLING-FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <!-- Trigger for rolling logs every day and limit size to 10 MB -->
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
@@ -23,8 +24,19 @@
         </encoder>
     </appender>
 
-    <root level="INFO">
-        <appender-ref ref="STDOUT" />
-        <appender-ref ref="ROLLING-FILE" />
-    </root>
+    <!-- In Kubernetes (k8s profile) -> STDOUT only, no file -->
+    <springProfile name="k8s">
+        <root level="INFO">
+            <appender-ref ref="STDOUT" />
+        </root>
+    </springProfile>
+
+    <!-- Local / default (NOT k8s) -> STDOUT + File -->
+    <springProfile name="!k8s">
+        <root level="INFO">
+            <appender-ref ref="STDOUT" />
+            <appender-ref ref="ROLLING-FILE" />
+        </root>
+    </springProfile>
+
 </configuration>
