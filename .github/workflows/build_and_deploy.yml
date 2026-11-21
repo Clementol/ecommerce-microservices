@@ -18,8 +18,8 @@ jobs:
         service:
           - api-gateway
           - config-server
-          - spirng-boot-inventory-service
-          - spirng-boot-order-service
+          - spring-boot-inventory-service
+          - spring-boot-order-service
 
     steps:
       # Step 1: Checkout the repository
