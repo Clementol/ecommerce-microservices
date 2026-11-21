@@ -40,7 +40,7 @@ jobs:
       - name: Build and Push ${{ matrix.service }}
         working-directory: ${{ matrix.service }}
         run: |
-          ./mvn clean package -DskipTests
+          ./mvnw clean package -DskipTests
 
   deploy:
     needs: build
